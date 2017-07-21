@@ -86,15 +86,27 @@
 
 # pragma mark - UIButton Methods
 - (IBAction)addReceipt:(UIButton *)sender {
-    Receipt *receipt = [NSEntityDescription insertNewObjectForEntityForName:@"Receipt" inManagedObjectContext:[self getContext]];
-    receipt.amount = [self.amountTextField.text floatValue];
-    receipt.note = self.descriptionTextView.text;
-    receipt.timeStamp = self.pickerView.date;
-    NSArray<NSIndexPath*>* pathForTags = [self.tableView indexPathsForSelectedRows];
-    for (NSIndexPath* index in pathForTags) {
-        [receipt addTagsObject:self.tags[index.row]];
+//    Receipt *receipt = [NSEntityDescription insertNewObjectForEntityForName:@"Receipt" inManagedObjectContext:[self getContext]];
+    if (self.isEditing)
+    {
+        self.receipt.amount = [self.amountTextField.text floatValue];
+        self.receipt.note = self.descriptionTextView.text;
+        self.receipt.timeStamp = self.pickerView.date;
+        [[self.receipt mutableSetValueForKey:@"tags"] removeAllObjects];
+        NSArray<NSIndexPath*>* pathForTags = [self.tableView indexPathsForSelectedRows];
+        for (NSIndexPath* index in pathForTags) {
+            [self.receipt addTagsObject:self.tags[index.row]];
+        }
+    } else {
+        Receipt *receipt = [[Receipt alloc] initWithContext:[self getContext]];
+        receipt.amount = [self.amountTextField.text floatValue];
+        receipt.note = self.descriptionTextView.text;
+        receipt.timeStamp = self.pickerView.date;
+        NSArray<NSIndexPath*>* pathForTags = [self.tableView indexPathsForSelectedRows];
+        for (NSIndexPath* index in pathForTags) {
+            [receipt addTagsObject:self.tags[index.row]];
+        }
     }
-    
     [[self appDelegate] saveContext];
     [self.delegate addReceipt];
     [self dismissViewControllerAnimated:YES completion:nil];
