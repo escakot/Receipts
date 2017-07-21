@@ -14,6 +14,11 @@
 		D121E4D41F2191E7009AEFC6 /* Receipts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D121E4D21F2191E7009AEFC6 /* Receipts.xcdatamodeld */; };
 		D121E4D61F2191E7009AEFC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D121E4D51F2191E7009AEFC6 /* Assets.xcassets */; };
 		D121E4D91F2191E7009AEFC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D121E4D71F2191E7009AEFC6 /* LaunchScreen.storyboard */; };
+		D121E4E21F2196E1009AEFC6 /* AddReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D121E4E11F2196E1009AEFC6 /* AddReceiptViewController.m */; };
+		D121E5091F21BDB8009AEFC6 /* Tag+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = D121E4FE1F21B316009AEFC6 /* Tag+CoreDataProperties.m */; };
+		D121E50A1F21BDBE009AEFC6 /* Receipt+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = D121E5021F21B317009AEFC6 /* Receipt+CoreDataProperties.m */; };
+		D121E50B1F21BE25009AEFC6 /* Receipt+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D121E5001F21B316009AEFC6 /* Receipt+CoreDataClass.m */; };
+		D121E50C1F21BE2A009AEFC6 /* Tag+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D121E4FC1F21B316009AEFC6 /* Tag+CoreDataClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,16 @@
 		D121E4D51F2191E7009AEFC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D121E4D81F2191E7009AEFC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D121E4DA1F2191E7009AEFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D121E4E01F2196E1009AEFC6 /* AddReceiptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddReceiptViewController.h; sourceTree = "<group>"; };
+		D121E4E11F2196E1009AEFC6 /* AddReceiptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReceiptViewController.m; sourceTree = "<group>"; };
+		D121E4FB1F21B316009AEFC6 /* Tag+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tag+CoreDataClass.h"; sourceTree = "<group>"; };
+		D121E4FC1F21B316009AEFC6 /* Tag+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tag+CoreDataClass.m"; sourceTree = "<group>"; };
+		D121E4FD1F21B316009AEFC6 /* Tag+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tag+CoreDataProperties.h"; sourceTree = "<group>"; };
+		D121E4FE1F21B316009AEFC6 /* Tag+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tag+CoreDataProperties.m"; sourceTree = "<group>"; };
+		D121E4FF1F21B316009AEFC6 /* Receipt+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Receipt+CoreDataClass.h"; sourceTree = "<group>"; };
+		D121E5001F21B316009AEFC6 /* Receipt+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Receipt+CoreDataClass.m"; sourceTree = "<group>"; };
+		D121E5011F21B316009AEFC6 /* Receipt+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Receipt+CoreDataProperties.h"; sourceTree = "<group>"; };
+		D121E5021F21B317009AEFC6 /* Receipt+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Receipt+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +59,14 @@
 		D121E4BA1F2191E6009AEFC6 = {
 			isa = PBXGroup;
 			children = (
+				D121E4FB1F21B316009AEFC6 /* Tag+CoreDataClass.h */,
+				D121E4FC1F21B316009AEFC6 /* Tag+CoreDataClass.m */,
+				D121E4FD1F21B316009AEFC6 /* Tag+CoreDataProperties.h */,
+				D121E4FE1F21B316009AEFC6 /* Tag+CoreDataProperties.m */,
+				D121E4FF1F21B316009AEFC6 /* Receipt+CoreDataClass.h */,
+				D121E5001F21B316009AEFC6 /* Receipt+CoreDataClass.m */,
+				D121E5011F21B316009AEFC6 /* Receipt+CoreDataProperties.h */,
+				D121E5021F21B317009AEFC6 /* Receipt+CoreDataProperties.m */,
 				D121E4C51F2191E7009AEFC6 /* Receipts */,
 				D121E4C41F2191E7009AEFC6 /* Products */,
 			);
@@ -64,6 +87,8 @@
 				D121E4CA1F2191E7009AEFC6 /* AppDelegate.m */,
 				D121E4CC1F2191E7009AEFC6 /* ViewController.h */,
 				D121E4CD1F2191E7009AEFC6 /* ViewController.m */,
+				D121E4E01F2196E1009AEFC6 /* AddReceiptViewController.h */,
+				D121E4E11F2196E1009AEFC6 /* AddReceiptViewController.m */,
 				D121E4CF1F2191E7009AEFC6 /* Main.storyboard */,
 				D121E4D51F2191E7009AEFC6 /* Assets.xcassets */,
 				D121E4D71F2191E7009AEFC6 /* LaunchScreen.storyboard */,
@@ -154,7 +179,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D121E4D41F2191E7009AEFC6 /* Receipts.xcdatamodeld in Sources */,
+				D121E4E21F2196E1009AEFC6 /* AddReceiptViewController.m in Sources */,
+				D121E50B1F21BE25009AEFC6 /* Receipt+CoreDataClass.m in Sources */,
+				D121E50A1F21BDBE009AEFC6 /* Receipt+CoreDataProperties.m in Sources */,
 				D121E4CE1F2191E7009AEFC6 /* ViewController.m in Sources */,
+				D121E5091F21BDB8009AEFC6 /* Tag+CoreDataProperties.m in Sources */,
+				D121E50C1F21BE2A009AEFC6 /* Tag+CoreDataClass.m in Sources */,
 				D121E4CB1F2191E7009AEFC6 /* AppDelegate.m in Sources */,
 				D121E4C81F2191E7009AEFC6 /* main.m in Sources */,
 			);
